@@ -210,4 +210,4 @@ services:
     links:
       - overworld
     volumes:
-- ./underworld:/var/lib/dsta/cluster
+      - ./underworld:/var/lib/dsta/cluster
