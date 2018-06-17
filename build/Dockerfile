@@ -1,12 +1,6 @@
 FROM dstacademy/steamcmd:0.4
 MAINTAINER DST Academy <support@dst.academy>
 
-RUN mv /etc/apt/sources.list /etc/apt/sources.list.bak && \
-    echo "deb https://mirrors.ustc.edu.cn/ubuntu/ xenial main restricted universe multiverse" >/etc/apt/sources.list && \
-    echo "deb https://mirrors.ustc.edu.cn/ubuntu/ xenial-updates main restricted universe multiverse" >>/etc/apt/sources.list && \
-    echo "deb https://mirrors.ustc.edu.cn/ubuntu/ xenial-backports main restricted universe multiverse" >>/etc/apt/sources.list && \
-    echo "deb https://mirrors.ustc.edu.cn/ubuntu/ xenial-security main restricted universe multiverse" >>/etc/apt/sources.list
-
 # Install dependencies.
 RUN set -x \
 	&& dpkg --add-architecture i386 \
