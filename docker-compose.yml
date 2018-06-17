@@ -2,7 +2,7 @@ version: "2"
 services:
   overworld:
     build:
-      context: https://github.com/dst-academy/docker-dontstarvetogether.git#v0.8.0:build
+      context: https://github.com/Dokyme/DST_docker_configuration.git:build
       args:
         MODS: 1185229307,375859599,378160973,458940297,936127063
     container_name: overworld
@@ -134,7 +134,7 @@ services:
       - ./overworld:/var/lib/dsta/cluster
   underworld:
     build:
-      context: https://github.com/dst-academy/docker-dontstarvetogether.git#v0.8.0:build
+      context: https://github.com/Dokyme/DST_docker_configuration.git:build
       args:
         MODS: 1185229307,375859599,378160973,458940297,936127063
     container_name: underworld
